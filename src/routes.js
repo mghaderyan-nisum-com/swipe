@@ -12,6 +12,7 @@ import {
     Survey,
     NotFound,
     Pagination,
+    Play,
   } from 'containers';
 
 export default (store) => {
@@ -44,6 +45,7 @@ export default (store) => {
       <Route onEnter={requireLogin}>
         <Route path="chat" component={Chat}/>
         <Route path="loginSuccess" component={LoginSuccess}/>
+        <Route path="play" component={Play}/>
       </Route>
 
       { /* Routes */ }
